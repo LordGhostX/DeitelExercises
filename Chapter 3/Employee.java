@@ -22,10 +22,10 @@ public class Employee {
 	}
 
 	public String getLastName() {
-		return LastName;
+		return lastName;
 	}
 
-	public String getSalary() {
+	public double getSalary() {
 		return salary;
 	}
 }
