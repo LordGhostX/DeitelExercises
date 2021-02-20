@@ -12,10 +12,9 @@ public class Quadratic {
 		double c = input.nextDouble();
 
 		double d = Math.sqrt((b * b) - (4 * a * c));
-		double firstAnswer = (-b + d) / (2 * a);
-		double secondAnswer = (-b - d) / (2 * a);
+		double firstRoot = (-b + d) / (2 * a);
+		double secondRoot = (-b - d) / (2 * a);
 
-		System.out.println(firstAnswer);
-		System.out.println(secondAnswer);
+		System.out.printf("The first root of the equation is %.2f%nThe second root of the equation is %.2f%n", firstRoot, secondRoot);
 	}
 }
