@@ -10,7 +10,8 @@ public class MP3Player {
 		this.name = name;
 		if (totalSongs > 1) {
 			this.totalSongs = totalSongs;
-		} else {
+		}
+		if (totalSongs <= 1) {
 			this.totalSongs = 1;
 		}
 	}
@@ -18,9 +19,8 @@ public class MP3Player {
 	public String getName() {
 		if (isOn == true) {
 			return this.name;
-		} else {
-			return "";
 		}
+		return "";
 	}
 
 	public boolean checkIsOn() {
@@ -30,7 +30,8 @@ public class MP3Player {
 	public void turnOnOrOff() {
 		if (isOn == true) {
 			isOn = false;
-		} else {
+		}
+		if (isOn == false) {
 			isOn = true;
 		}
 	}
@@ -38,9 +39,8 @@ public class MP3Player {
 	public int getVolume() {
 		if (isOn == true) {
 			return volume;
-		} else {
-			return 0;
 		}
+		return 0;
 	}
 
 	public void increaseVolume() {
@@ -63,7 +63,8 @@ public class MP3Player {
 		if (isOn == true) {
 			if (isPlaying == true) {
 				isPlaying = false;
-			} else {
+			}
+			if (isPlaying == false) {
 				isPlaying = true;
 			}
 		}
@@ -72,9 +73,8 @@ public class MP3Player {
 	public int getCurrentSong() {
 		if (isOn == true){
 			return currentPlayingSong;
-		} else {
-			return 0;
 		}
+		return 0;
 	}
 
 	public void previousSong() {
@@ -92,9 +92,8 @@ public class MP3Player {
 	public int getTotalSongs() {
 		if (isOn == true){
 			return totalSongs;
-		} else {
-			return 0;
 		}
+		return 0;
 	}
 
 	public void addSong() {
