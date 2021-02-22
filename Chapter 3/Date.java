@@ -1,13 +1,11 @@
 public class Date {
-	private int month;
-	private int day;
-	private int year;
+	//you are to initialize here
+	private int month = 2;
+	private int day = 3;
+	private int year = 2009;
 
-	public Date (int month, int day, int year) {
-		this.month = month;
-		this.day = day;
-		this.year = year;
-	}
+	//you do not need an extra method to initialize
+
 
 	public void setMonth(int month) {
 		this.month = month;
@@ -19,7 +17,7 @@ public class Date {
 
 	public void setYear(int year) {
 		this.year = year;
-	}	
+	}
 
 	public int getMonth() {
 		return month;
@@ -28,7 +26,7 @@ public class Date {
 	public int getDay() {
 		return day;
 	}
-	
+
 	public int getYear() {
 		return year;
 	}
@@ -37,3 +35,4 @@ public class Date {
 		return month + "/" + day + "/" + year;
 	}
 }
+
