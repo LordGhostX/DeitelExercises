@@ -36,3 +36,22 @@ public class Date {
 	}
 }
 
+//I added a class here so prevent creating a class outside this file
+class DateTest {
+	public static void main(String[] args) {
+		com.danielsumah.Date date = new com.danielsumah.Date();
+
+		//display the defaults
+		System.out.println("Default date is : ");
+		System.out.println(date.displayDate());
+
+		//set new values
+		date.setDay(22);
+		date.setMonth(2);
+		date.setYear(2021);
+		//display new date
+		System.out.println("Current date is : ");
+		System.out.println(date.displayDate());
+
+	}
+}
