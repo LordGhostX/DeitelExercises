@@ -1,5 +1,5 @@
 public class Kata {
-	public double calcAverage(int firstNumber, int secondNumber, int thirdNumber) {
+	public double calculateAverage(int firstNumber, int secondNumber, int thirdNumber) {
 		double result = (firstNumber + secondNumber + thirdNumber) / 3.0;
 		return result;
 	}
@@ -9,7 +9,7 @@ public class Kata {
 		return isEven;
 	}
 
-	public String calcGrade(int score) {
+	public String calculateGrade(int score) {
 		if (score >= 90) {
 			return "A";
 		} else if (score >= 80) {
@@ -19,5 +19,17 @@ public class Kata {
 		} else {
 			return "D";
 		}
+	}
+
+	public boolean isPrimeNumber(int number) {
+		int primeLimit = (int) Math.sqrt(number);
+		for (int i = 2; i < primeLimit + 1; i++) {
+			if (number % i == 0) {
+				return false;
+			}
+		}
+
+		boolean isPrime = true && number != 1;
+		return isPrime;
 	}
 }
